@@ -45,4 +45,3 @@ coverage/
 assets/**/*.js
 
 # Ignore mock DB
-/db.json
