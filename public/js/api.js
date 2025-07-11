@@ -9,7 +9,7 @@ export const api = {
   get: async param => {
     // TODO: Realiza una petición GET a la API y devuelve los datos
     try {
-      const response = await fetch(`${this.base}${param}`);
+      const response = await fetch(`${api.base}${param}`);
       if (!response.ok) {
         throw new Error('Error al obtener los datos');
       }
@@ -23,7 +23,7 @@ export const api = {
   post: async (param, data) => {
     // TODO: Realiza una petición POST a la API con los datos
     try {
-      const response = await fetch(`${this.base}${param}`, {
+      const response = await fetch(`${api.base}${param}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -42,9 +42,37 @@ export const api = {
   // Implementa la función PUT
   put: async (p, data) => {
     // TODO: Realiza una petición PUT a la API con los datos
+    try {
+      const response = await fetch(`${api.base}${p}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      if (!response.ok) {
+        throw new Error('Error al actualizar los datos');
+      }
+      return await response.json();
+    } catch (error) {
+      console.error('Error en la petición PUT:', error);
+      throw error;
+    }
   },
   // Implementa la función DELETE
   del: async p => {
     // TODO: Realiza una petición DELETE a la API
+    try {
+      const response = await fetch(`${api.base}${p}`, {
+        method: 'DELETE'
+      });
+      if (!response.ok) {
+        throw new Error('Error al eliminar los datos');
+      }
+      return await response.json();
+    } catch (error) {
+      console.error('Error en la petición DELETE:', error);
+      throw error;
+    }
   }
 };
