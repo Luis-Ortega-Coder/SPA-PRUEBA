@@ -10,7 +10,8 @@
       "name": "lucho",
       "email": "a@aaa",
       "password": "12345678",
-      "id": 2
+      "id": 2,
+      "role": "visitante"
     }
   ],
   "events": [

@@ -163,7 +163,7 @@ export async function showEditCourse() {
   }
 
   const courseId = location.hash.split('/').pop();
-  const course = await api.get(`'/events'  ${courseId}`);
+  const course = await api.get('/events/', courseId);
 
   if (!course) {
     renderNotFound();
@@ -186,7 +186,7 @@ export async function showEditCourse() {
       instructor: e.target.instructor.value,
       capacity: parseInt(e.target.capacity.value)
     };
-    await api.put('/events' + courseId, updated);
+    await api.put('/events/' + courseId, updated);
     location.hash = '#/dashboard/courses';
     router();
   };

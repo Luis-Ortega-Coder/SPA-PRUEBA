@@ -25,7 +25,7 @@ git clone https://github.com/Luis-Ortega-Coder/SPA-PRUEBA.git
 
 ## Usuarios por defecto
 
-- **Administrador:** admin@example.com / admin123
+- **Administrador:**   email: admin@eventos.com,  password: admin123,
 
 ## Funcionalidades
 
