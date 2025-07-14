@@ -1,5 +1,9 @@
 # SPA Gestión de Cursos - usuario123
 
+# Clona el repositorio
+
+git clone https://github.com/Luis-Ortega-Coder/SPA-PRUEBA.git
+
 ## Instrucciones
 
 1. Instala dependencias:
