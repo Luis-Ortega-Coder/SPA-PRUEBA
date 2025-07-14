@@ -5,8 +5,27 @@
       "email": "admin@eventos.com",
       "password": "admin123",
       "role": "admin"
+    },
+    {
+      "name": "lucho",
+      "email": "a@aaa",
+      "password": "12345678",
+      "id": 2
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "title": "c",
+      "instructor": "lucho",
+      "capacity": 12,
+      "id": 1
+    },
+    {
+      "title": "c",
+      "instructor": "lucho",
+      "capacity": 1,
+      "id": 2
+    }
+  ],
   "registrations": []
 }

@@ -39,7 +39,7 @@ export const api = {
       throw error;
     }
   },
-  // Implementa la función PUT
+
   put: async (p, data) => {
     // TODO: Realiza una petición PUT a la API con los datos
     try {
